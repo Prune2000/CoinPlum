@@ -1,0 +1,116 @@
+
+
+/* Reusable items */
+
+$title-font: 'Rajdhani', sans-serif;
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 105%;
+}
+
+html,
+body {
+    color: #000;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+.container__header {
+    height: auto;
+    width: auto;
+    margin: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+        ), url(img/background3.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-content: center;
+    padding: 100px 0 50px 0;
+
+    h1 {
+        text-align: center;
+        font-family: $title-font;
+        font-size: 300%;
+        font-weight: 600;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .main__form-input {
+        text-align: center;
+
+        p {
+            color: white;
+        }
+
+        .effect-form:focus {
+            padding: 5px 14px 7px; transition: 0.4s;
+
+            .focus-border {
+                position: absolute; 
+                height: 36px; 
+                bottom: 0; 
+                left: 0; 
+                width: 0; 
+                transition: 0.4s;
+            }
+        }
+        .effect-5:focus ~ .focus-border {
+            width: 100%; 
+            transition: 0.4s; 
+            border: 2px solid #4caf50;
+        }
+    }
+}
+
+/* ----------------------------------------------- */
+/* INFO */
+/* ----------------------------------------------- */
+
+.container__info {
+    height: 100vh;
+
+    .container__info-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
