@@ -17,6 +17,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  overflow: auto;
 }
 
 .clearfix {
@@ -35,7 +36,7 @@ body {
 /* HEADER */
 /* ----------------------------------------------- */
 .container__header {
-  height: auto;
+  height: 50vh;
   width: auto;
   margin: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/background3.jpg) no-repeat center center;
@@ -83,10 +84,64 @@ body {
 /* ----------------------------------------------- */
 .container__info {
   height: 100vh;
+  overflow: auto;
+  text-align: center;
 }
 .container__info .container__info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+/* ----------------------------------------------- */
+/* TWEETS */
+/* ----------------------------------------------- */
+.tweets {
+  padding: 20px 50px;
+  height: auto;
+  overflow: auto;
+  text-align: left;
+}
+
+.tweet_card {
+  padding: 10px 10px;
+  box-shadow: 2px 2px 2px #999999;
+  margin-bottom: 50px;
+}
+.tweet_card .profile-thumbnail {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 90px;
+  margin: 0 20px 20px 0;
+}
+.tweet_card .profile-name {
+  justify-content: center;
+  margin-left: 10px;
+}
+.tweet_card h4 {
+  margin-bottom: 20px;
+}
+
+#inner p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#inner hr {
+  margin: 20px 0;
+  border-style: solid;
+  opacity: 0.1;
+}
+
+.stats {
+  display: flex;
+  font-size: 15px;
+}
+.stats strong {
+  font-size: 18px;
+}
+.stats .retweets {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

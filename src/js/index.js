@@ -13,17 +13,17 @@ const controlSearch = async () => {
 
     if (coinid) {
         // 2) New search object and add to state
-        console.log(coinid);
+        
         state.search = new Twitter(coinid);
         
         // 3) Prepare UI for results
 
         try {
-            // 4) Search for recipes
+            // 4) Search for tweets
             await state.search.getResults();
     
             // 5) Render results on UI
-
+            searchView.renderResults(state.search.result);
         } catch (err) {
             alert('Something wrong with the search...');
         }
