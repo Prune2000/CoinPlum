@@ -1,4 +1,5 @@
 import Twitter from './models/Twitter';
+import Event from './models/Event';
 import * as searchView from './views/searchView';
 import { elements } from './views/base';
 
@@ -14,16 +15,20 @@ const controlSearch = async () => {
     if (coinid) {
         // 2) New search object and add to state
         
-        state.search = new Twitter(coinid);
+        state.tweet = new Twitter(coinid);
+        state.event = new Event(coinid);
         
         // 3) Prepare UI for results
 
         try {
             // 4) Search for tweets
-            await state.search.getResults();
+            await state.tweet.getResults();
+            await state.event.getResults();
     
             // 5) Render results on UI
-            searchView.renderResults(state.search.result);
+            searchView.renderEventResults(state.event.resultEvent);
+            searchView.renderTweetResults(state.tweet.resultTweet);
+            
         } catch (err) {
             alert('Something wrong with the search...');
         }

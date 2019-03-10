@@ -8,7 +8,7 @@ export default class Twitter {
         
         try {
             const twitterRes = await axios(`https://api.coinpaprika.com/v1/coins/${this.coinid}/twitter/`);
-            this.result = twitterRes.data;
+            this.resultTweet = twitterRes.data;
             //this.username = twitterRes.data.user_name;
             //this.date = twitterRes.data.date;
             //this.like = twitterRes.data.like_count;

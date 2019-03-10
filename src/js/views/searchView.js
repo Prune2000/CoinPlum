@@ -9,7 +9,6 @@ const renderTweet = tweet => {
         <div class="profile-name">
             <h4>@${tweet.user_name}</h4>
         </div>
-        </header>
         <div id="inner">
             <p>${tweet.status}</p>
             <span class="date">${tweet.date}</span>
@@ -28,22 +27,49 @@ const renderTweet = tweet => {
     elements.twitterSection.insertAdjacentHTML('beforeend', markup);
 };
 
-export const renderResults = tweet => {
+const renderEvent = event => {
+    const markup = `
+        <div class="event_card">
+            <img src="${event.proof_image_link}" alt="${event.description}" class="event-thumbnail">
+        <div class="event-name">
+            <h4>${event.name}</h4>
+        </div>
+        <div id="inner_event">
+            <p>${event.description}</p>
+            <a href="${event.link}"><p>Link to the full article</p></a>
+            <span class="date">${event.date}</span>
+            <hr>
+        </div>
+    </div>
+    `;
+    elements.eventSection.insertAdjacentHTML('beforeend', markup);
+};
 
-    console.log(tweet);
-    renderTweet(tweet[0]);
-    renderTweet(tweet[1]);
-    renderTweet(tweet[2]);
-    renderTweet(tweet[3]);
-    renderTweet(tweet[4]);
-    renderTweet(tweet[5]);
-    renderTweet(tweet[6]);
-    renderTweet(tweet[7]);
-    renderTweet(tweet[8]);
-    renderTweet(tweet[9]);
-    //const start = tweet[0];
-    //const end = tweet[9];
+export const renderTweetResults = inputSearch => {
 
-    //tweet.slice(start, end).forEach(renderTweet);
+    console.log(inputSearch);
+    renderTweet(inputSearch[0]);
+    renderTweet(inputSearch[1]);
+    renderTweet(inputSearch[2]);
+    renderTweet(inputSearch[3]);
+    renderTweet(inputSearch[4]);
+    renderTweet(inputSearch[5]);
+    renderTweet(inputSearch[6]);
+    renderTweet(inputSearch[7]);
+    renderTweet(inputSearch[8]);
+    renderTweet(inputSearch[9]); 
+};
 
+export const renderEventResults = inputSearch => {
+
+    renderEvent(inputSearch[0]);
+    renderEvent(inputSearch[1]);
+    renderEvent(inputSearch[2]);
+    renderEvent(inputSearch[3]);
+    renderEvent(inputSearch[4]);
+    renderEvent(inputSearch[5]);
+    renderEvent(inputSearch[6]);
+    renderEvent(inputSearch[7]);
+    renderEvent(inputSearch[8]);
+    renderEvent(inputSearch[9]);  
 };
