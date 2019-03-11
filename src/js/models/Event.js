@@ -8,7 +8,7 @@ export default class Event {
         
         try {
             const eventRes = await axios(`https://api.coinpaprika.com/v1/coins/${this.coinid}/events/`);
-            this.resultEvent = eventRes.data;
+            this.resultEvent = (eventRes.data).reverse();
             console.log(this.resultEvent);
 
         } catch (error) {

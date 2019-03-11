@@ -30,13 +30,13 @@ const renderTweet = tweet => {
 const renderEvent = event => {
     const markup = `
         <div class="event_card">
-            <img src="${event.proof_image_link}" alt="${event.description}" class="event-thumbnail">
+            <img src="${event.proof_image_link}" alt="${event.id}" class="event-thumbnail">
         <div class="event-name">
             <h4>${event.name}</h4>
         </div>
         <div id="inner_event">
             <p>${event.description}</p>
-            <a href="${event.link}"><p>Link to the full article</p></a>
+            <a href="${event.link}"><p>Link to the event information</p></a>
             <span class="date">${event.date}</span>
             <hr>
         </div>
