@@ -46,30 +46,9 @@ const renderEvent = event => {
 };
 
 export const renderTweetResults = inputSearch => {
-
-    console.log(inputSearch);
-    renderTweet(inputSearch[0]);
-    renderTweet(inputSearch[1]);
-    renderTweet(inputSearch[2]);
-    renderTweet(inputSearch[3]);
-    renderTweet(inputSearch[4]);
-    renderTweet(inputSearch[5]);
-    renderTweet(inputSearch[6]);
-    renderTweet(inputSearch[7]);
-    renderTweet(inputSearch[8]);
-    renderTweet(inputSearch[9]); 
+    inputSearch.forEach(renderTweet);
 };
 
 export const renderEventResults = inputSearch => {
-
-    renderEvent(inputSearch[0]);
-    renderEvent(inputSearch[1]);
-    renderEvent(inputSearch[2]);
-    renderEvent(inputSearch[3]);
-    renderEvent(inputSearch[4]);
-    renderEvent(inputSearch[5]);
-    renderEvent(inputSearch[6]);
-    renderEvent(inputSearch[7]);
-    renderEvent(inputSearch[8]);
-    renderEvent(inputSearch[9]);  
+    inputSearch.forEach(renderEvent);
 };

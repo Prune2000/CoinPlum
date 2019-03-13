@@ -8,8 +8,8 @@ export default class Event {
         
         try {
             const eventRes = await axios(`https://api.coinpaprika.com/v1/coins/${this.coinid}/events/`);
-            this.resultEvent = (eventRes.data).reverse();
-            console.log(this.resultEvent);
+            this.resultEvent = (eventRes.data).reverse().slice(0, 10); // reversing the array because the events are starting with the oldest and I want to display the most recent first
+            //console.log(this.resultEvent);
 
         } catch (error) {
             alert('Oops! Cant find this coin');
