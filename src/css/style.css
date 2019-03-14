@@ -80,6 +80,20 @@ body {
   transition: 0.4s;
   border: 2px solid #4caf50;
 }
+.container__header .btn {
+  margin-top: 10px;
+  width: 100px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 200px;
+  border: 1px solid #2f3542;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.container__header .btn:hover,
+.container__header .btn:active {
+  background-color: #2f3542;
+  border: 1px solid #2f3542;
+}
 
 /* ----------------------------------------------- */
 /* INFO */
