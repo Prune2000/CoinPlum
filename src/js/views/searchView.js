@@ -2,6 +2,26 @@ import { elements } from './base';
 
 export const getInput = () => elements.searchInput.value;
 
+export const cleanInput = () => {
+    elements.searchInput.value = '';
+}
+
+export const cleanResults = () => {
+    elements.coinInfo.innerHTML = '';
+    elements.twitterSection.innerHTML = '';
+    elements.eventSection.innerHTML = '';
+}
+
+const renderCoinInfo = coin => {
+    const markup = `
+    <div class="title">
+        <h1>${coin.name}</h1>
+        <p>${coin.description}</p>
+    </div>
+    `;
+    elements.coinInfo.insertAdjacentHTML('beforeend', markup);
+}
+
 const renderTweet = tweet => {
     const markup = `
         <div class="tweet_card">
@@ -45,6 +65,10 @@ const renderEvent = event => {
     elements.eventSection.insertAdjacentHTML('beforeend', markup);
 };
 
+export const renderInfoResults = inputSearch => {
+    renderCoinInfo(inputSearch);
+};
+
 export const renderTweetResults = inputSearch => {
     inputSearch.forEach(renderTweet);
 };
@@ -52,3 +76,5 @@ export const renderTweetResults = inputSearch => {
 export const renderEventResults = inputSearch => {
     inputSearch.forEach(renderEvent);
 };
+
+

@@ -2,6 +2,7 @@ import Twitter from './models/Twitter';
 import Event from './models/Event';
 import * as searchView from './views/searchView';
 import { elements } from './views/base';
+import Coininfo from './models/Coininfo';
 
 const state = {};
 
@@ -15,22 +16,28 @@ const controlSearch = async () => {
     if (coinid) {
         // 2) New search object and add to state
         
+        state.info = new Coininfo(coinid);
         state.tweet = new Twitter(coinid);
         state.event = new Event(coinid);
         
         // 3) Prepare UI for results
 
+        searchView.cleanInput();
+        searchView.cleanResults();
+
         try {
             // 4) Search for tweets
+            await state.info.getResults();
             await state.tweet.getResults();
             await state.event.getResults();
     
             // 5) Render results on UI
+            searchView.renderInfoResults(state.info.resultInfo);
             searchView.renderEventResults(state.event.resultEvent);
             searchView.renderTweetResults(state.tweet.resultTweet);
             
         } catch (err) {
-            alert('Something wrong with the search...');
+            alert('Cannot find this coin. Make sure you search in this format: btc-bitcoin; eth-ethereum, xlm-stellar, etc.');
         }
     }
 }

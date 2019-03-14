@@ -3,6 +3,7 @@
 /* Reusable items */
 
 $title-font: 'Rajdhani', sans-serif;
+$cryptic-font: 'Major Mono Display', monospace;
 
 
 /* ----------------------------------------------- */
@@ -58,7 +59,7 @@ body {
 
     h1 {
         text-align: center;
-        font-family: $title-font;
+        font-family: $cryptic-font;
         font-size: 300%;
         font-weight: 600;
         margin-bottom: 100px;
@@ -105,6 +106,24 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .container__info-fullInfo {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding: 0 100px;
+
+        h1 {
+            font-family: $cryptic-font;
+            padding: 50px 0;
+            font-size: 250%;
+        }
+
+        p {
+            font-family: $title-font;
+            margin-bottom: 50px;
+        }
+    }
     
 }
 
@@ -113,6 +132,12 @@ body {
 /* TWEETS */
 /* ----------------------------------------------- */
 
+.info__twitter {
+    h1 {
+        font-family: $cryptic-font;
+        font-size: 200%;
+    }
+}
 .tweets {
     padding: 20px 50px;
     height: auto;
@@ -133,7 +158,6 @@ body {
         margin: 0 20px 20px 0;
       }
       .profile-name {
-
         justify-content: center;
         margin-left: 10px;
       }
@@ -169,6 +193,12 @@ body {
 /* EVENTS */
 /* ----------------------------------------------- */
 
+.info__events {
+    h1 {
+        font-family: $cryptic-font;
+        font-size: 200%;
+    }
+}
 .events {
     padding: 20px 50px;
     height: auto;

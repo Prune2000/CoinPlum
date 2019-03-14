@@ -12,7 +12,7 @@ export default class Twitter {
             
 
         } catch (error) {
-            alert('Oops! Cant find this coin');
+            return error;
         }
     }
 }

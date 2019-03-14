@@ -51,7 +51,7 @@ body {
 }
 .container__header h1 {
   text-align: center;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Major Mono Display", monospace;
   font-size: 300%;
   font-weight: 600;
   margin-bottom: 100px;
@@ -92,10 +92,30 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.container__info .container__info-fullInfo {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  padding: 0 100px;
+}
+.container__info .container__info-fullInfo h1 {
+  font-family: "Major Mono Display", monospace;
+  padding: 50px 0;
+  font-size: 250%;
+}
+.container__info .container__info-fullInfo p {
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 50px;
+}
 
 /* ----------------------------------------------- */
 /* TWEETS */
 /* ----------------------------------------------- */
+.info__twitter h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 200%;
+}
+
 .tweets {
   padding: 20px 50px;
   height: auto;
@@ -148,6 +168,11 @@ body {
 /* ----------------------------------------------- */
 /* EVENTS */
 /* ----------------------------------------------- */
+.info__events h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 200%;
+}
+
 .events {
   padding: 20px 50px;
   height: auto;

@@ -12,7 +12,7 @@ export default class Event {
             //console.log(this.resultEvent);
 
         } catch (error) {
-            alert('Oops! Cant find this coin');
+            return error;
         }
     }
 }

@@ -3,5 +3,6 @@ export const elements = {
     searchInput: document.querySelector('.search__field'),
     twitterSection: document.querySelector('.tweets'),
     eventSection: document.querySelector('.events'),
+    coinInfo: document.querySelector('.container__info-fullInfo'),
 
 };
