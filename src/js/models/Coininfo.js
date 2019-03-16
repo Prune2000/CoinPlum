@@ -17,7 +17,7 @@ export default class Coininfo {
             if (arrayOfWords.length >= 40) {
                 let limitedArray = arrayOfWords.slice(0, 40);
                 let limitedDescription = limitedArray.join(' ');
-                this.resultInfo.description = limitedDescription;
+                this.resultInfo.description = (limitedDescription + '...');
             }
             
             
