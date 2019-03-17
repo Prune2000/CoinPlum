@@ -39,9 +39,9 @@ body {
   height: auto;
   width: auto;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   margin: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/background3.jpg) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.719)), url(img/background4-min.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -62,6 +62,7 @@ body {
 }
 .container__header .main__form-input p {
   color: white;
+  margin-bottom: 10px;
 }
 .container__header .main__form-input .effect-form:focus {
   padding: 5px 14px 7px;
@@ -99,8 +100,9 @@ body {
 /* INFO */
 /* ----------------------------------------------- */
 .container__info {
-  height: 100vh;
+  height: auto;
   text-align: center;
+  background-color: black;
 }
 .container__info .container__info-grid {
   display: grid;
@@ -111,6 +113,7 @@ body {
   height: 300px;
   text-align: center;
   padding: 0 100px;
+  color: white;
 }
 .container__info .container__info-fullInfo h1 {
   font-family: "Major Mono Display", monospace;
@@ -128,6 +131,7 @@ body {
 .info__twitter h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 200%;
+  color: white;
 }
 
 .tweets {
@@ -139,8 +143,9 @@ body {
 
 .tweet_card {
   padding: 10px 10px;
-  box-shadow: 2px 2px 2px #999999;
+  box-shadow: 4px 4px 1px #9b9b9b;
   margin-bottom: 50px;
+  background-color: white;
 }
 .tweet_card .profile-thumbnail {
   float: left;
@@ -185,6 +190,7 @@ body {
 .info__events h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 200%;
+  color: white;
 }
 
 .events {
@@ -196,8 +202,9 @@ body {
 
 .event_card {
   padding: 10px 10px;
-  box-shadow: 2px 2px 2px #999999;
+  box-shadow: 4px 4px 1px #9b9b9b;
   margin-bottom: 50px;
+  background-color: white;
 }
 .event_card .event-thumbnail {
   float: left;

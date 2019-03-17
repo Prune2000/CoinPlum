@@ -43,12 +43,12 @@ body {
     height: auto;
     width: auto;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     margin: 0;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.3), 
-        rgba(0, 0, 0, 0.3)
-        ), url(img/background3.jpg) no-repeat center center;
+        rgba(0, 0, 0, 0.582), 
+        rgba(0, 0, 0, 0.719)
+        ), url(img/background4-min.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -70,6 +70,7 @@ body {
 
         p {
             color: white;
+            margin-bottom: 10px;
         }
 
         .effect-form:focus {
@@ -113,9 +114,10 @@ body {
 /* ----------------------------------------------- */
 
 .container__info {
-    height: 100vh;
+    height: auto;
     text-align: center;
-
+    background-color: black;
+    
 
     .container__info-grid {
         display: grid;
@@ -127,6 +129,7 @@ body {
         height: 300px;
         text-align: center;
         padding: 0 100px;
+        color: white;
 
         h1 {
             font-family: $cryptic-font;
@@ -151,6 +154,7 @@ body {
     h1 {
         font-family: $cryptic-font;
         font-size: 200%;
+        color: white;
     }
 }
 .tweets {
@@ -162,8 +166,9 @@ body {
 
 .tweet_card {
     padding: 10px 10px;
-    box-shadow: 2px 2px 2px rgb(153, 153, 153);
+    box-shadow: 4px 4px 1px rgb(155, 155, 155);
     margin-bottom: 50px;
+    background-color: white;
 
     .profile-thumbnail {
         float: left;
@@ -212,6 +217,7 @@ body {
     h1 {
         font-family: $cryptic-font;
         font-size: 200%;
+        color: white;
     }
 }
 .events {
@@ -223,8 +229,9 @@ body {
 
 .event_card {
     padding: 10px 10px;
-    box-shadow: 2px 2px 2px rgb(153, 153, 153);
+    box-shadow: 4px 4px 1px rgb(155, 155, 155);
     margin-bottom: 50px;
+    background-color: white;
 
     .event-thumbnail {
         float: left;

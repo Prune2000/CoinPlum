@@ -70,11 +70,20 @@ export const renderInfoResults = inputSearch => {
 };
 
 export const renderTweetResults = inputSearch => {
+    inputSearch.forEach(newDate);
     inputSearch.forEach(renderTweet);
 };
 
 export const renderEventResults = inputSearch => {
+    inputSearch.forEach(newDate);
     inputSearch.forEach(renderEvent);
 };
+
+// Format the date
+export const newDate = coin => {
+    let newDate = coin.date.split('T');
+    coin.date = newDate[0];
+};
+
 
 
