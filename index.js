@@ -1,8 +1,8 @@
-import Twitter from './models/Twitter';
-import Event from './models/Event';
-import * as searchView from './views/searchView';
-import { elements, renderLoader, clearLoader } from './views/base';
-import Coininfo from './models/Coininfo';
+import Twitter from './src/js/models/Twitter';
+import Event from './src/js/models/Event';
+import * as searchView from './src/js/views/searchView';
+import { elements, renderLoader, clearLoader } from './src/js/views/base';
+import Coininfo from './src/js/models/Coininfo';
 
 const state = {};
 
