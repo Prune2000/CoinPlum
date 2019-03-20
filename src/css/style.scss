@@ -40,7 +40,7 @@ body {
 /* HEADER */
 /* ----------------------------------------------- */
 .container__header {
-    height: auto;
+    min-height: 80vh;
     width: auto;
     position: relative;
     overflow: auto;
@@ -240,11 +240,13 @@ body {
     }
     .event-name {
         justify-content: center;
-        margin-left: 10px;
+        text-align: center;
     }
       
     h4 {
         margin-bottom: 20px;
+        font-family: $cryptic-font;
+        font-size: 30px;
     }
     p {
         margin-bottom: 10px;

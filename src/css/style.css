@@ -36,7 +36,7 @@ body {
 /* HEADER */
 /* ----------------------------------------------- */
 .container__header {
-  height: auto;
+  min-height: 80vh;
   width: auto;
   position: relative;
   overflow: auto;
@@ -213,10 +213,12 @@ body {
 }
 .event_card .event-name {
   justify-content: center;
-  margin-left: 10px;
+  text-align: center;
 }
 .event_card h4 {
   margin-bottom: 20px;
+  font-family: "Major Mono Display", monospace;
+  font-size: 30px;
 }
 .event_card p {
   margin-bottom: 10px;
