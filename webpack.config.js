@@ -8,7 +8,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, 'src'),
-        filename: './js/bundle.js'
+        filename: 'bundle.js'
     },
     devServer: {
         contentBase: './src',
