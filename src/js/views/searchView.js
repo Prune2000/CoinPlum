@@ -64,7 +64,6 @@ const renderEvent = event => {
                 <p>${event.description}</p>
                 <a href="${event.link}"><p>Link to the event information</p></a>
                 <span class="date">${event.date}</span>
-                <hr>
             </div>
         </div>
     `;

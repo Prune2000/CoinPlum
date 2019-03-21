@@ -155,6 +155,7 @@ body {
         font-family: $cryptic-font;
         font-size: 200%;
         color: white;
+        margin-bottom: 30px;
     }
 }
 .tweets {
@@ -175,7 +176,7 @@ body {
         width: 50px;
         height: 50px;
         border-radius: 90px;
-        margin: 0 20px 20px 0;
+        margin: 10px 20px 20px 0;
       }
       .profile-name {
         justify-content: center;
@@ -218,6 +219,7 @@ body {
         font-family: $cryptic-font;
         font-size: 200%;
         color: white;
+        margin-bottom: 30px;
     }
 }
 .events {
