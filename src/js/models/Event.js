@@ -12,7 +12,7 @@ export default class Event {
             this.resultEvent = eventRes.data.filter(event => new Date(event.date) > new Date()); // Filters through the array of results and picks only the future events
 
         } catch (error) {
-            alert('Error in the event');
+            return error;
         }
     }
 }

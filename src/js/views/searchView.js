@@ -7,6 +7,8 @@ export const cleanInput = () => {
 }
 
 export const cleanResults = () => {
+    elements.twitterTitle.innerHTML = '';
+    elements.eventTitle.innerHTML = '';
     elements.coinInfo.innerHTML = '';
     elements.twitterSection.innerHTML = '';
     elements.eventSection.innerHTML = '';
@@ -20,6 +22,11 @@ const renderCoinInfo = coin => {
     </div>
     `;
     elements.coinInfo.insertAdjacentHTML('beforeend', markup);
+}
+
+export const renderTitles = () => {
+    elements.twitterTitle.innerHTML = 'Twitter';
+    elements.eventTitle.innerHTML = 'Future Events';
 }
 
 const renderTweet = tweet => {

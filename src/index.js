@@ -24,6 +24,7 @@ const controlSearch = async () => {
 
         searchView.cleanInput();
         searchView.cleanResults();
+        
         renderLoader(elements.coinInfo);
 
         try {
@@ -34,6 +35,7 @@ const controlSearch = async () => {
     
             // 5) Render results on UI
             clearLoader();
+            searchView.renderTitles();
             searchView.renderInfoResults(state.info.resultInfo);
             searchView.renderEventResults(state.event.resultEvent);
             searchView.renderTweetResults(state.tweet.resultTweet);
@@ -41,6 +43,7 @@ const controlSearch = async () => {
         } catch (err) {
             alert('Cannot find this coin. Make sure you search in this format: btc-bitcoin; eth-ethereum, xlm-stellar, etc.');
             clearLoader();
+            searchView.cleanResults();
         }
     }
 }

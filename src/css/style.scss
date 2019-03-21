@@ -151,7 +151,7 @@ body {
 /* ----------------------------------------------- */
 
 .info__twitter {
-    h1 {
+    .twitter__title {
         font-family: $cryptic-font;
         font-size: 200%;
         color: white;
@@ -214,7 +214,7 @@ body {
 /* ----------------------------------------------- */
 
 .info__events {
-    h1 {
+    .events__title {
         font-family: $cryptic-font;
         font-size: 200%;
         color: white;

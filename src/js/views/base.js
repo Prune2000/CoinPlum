@@ -1,7 +1,9 @@
 export const elements = {
     searchForm: document.querySelector('.search'),
     searchInput: document.querySelector('.search__field'),
+    twitterTitle: document.querySelector('.twitter__title'),
     twitterSection: document.querySelector('.tweets'),
+    eventTitle: document.querySelector('.events__title'),
     eventSection: document.querySelector('.events'),
     coinInfo: document.querySelector('.container__info-fullInfo'),
 
