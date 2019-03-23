@@ -99,6 +99,24 @@ body {
 /* ----------------------------------------------- */
 /* INFO */
 /* ----------------------------------------------- */
+.container__info-fullInfo {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0 100px;
+  color: white;
+  background-color: black;
+}
+.container__info-fullInfo h1 {
+  font-family: "Major Mono Display", monospace;
+  padding: 50px 0;
+  font-size: 250%;
+}
+.container__info-fullInfo p {
+  font-family: "Rajdhani", sans-serif;
+  padding-bottom: 50px;
+}
+
 .container__info {
   height: auto;
   text-align: center;
@@ -107,22 +125,6 @@ body {
 .container__info .container__info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-.container__info .container__info-fullInfo {
-  width: 100%;
-  height: 300px;
-  text-align: center;
-  padding: 0 100px;
-  color: white;
-}
-.container__info .container__info-fullInfo h1 {
-  font-family: "Major Mono Display", monospace;
-  padding: 50px 0;
-  font-size: 250%;
-}
-.container__info .container__info-fullInfo p {
-  font-family: "Rajdhani", sans-serif;
-  margin-bottom: 50px;
 }
 
 /* ----------------------------------------------- */
@@ -141,12 +143,18 @@ body {
   overflow: auto;
   text-align: left;
 }
+.tweets a {
+  text-decoration: none;
+}
 
 .tweet_card {
   padding: 10px 10px;
   box-shadow: 4px 4px 1px #9b9b9b;
   margin-bottom: 50px;
   background-color: white;
+  color: black;
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 .tweet_card .profile-thumbnail {
   float: left;
@@ -161,6 +169,12 @@ body {
 }
 .tweet_card h4 {
   margin-bottom: 20px;
+}
+
+.tweet_card:hover,
+.tweet_card:focus,
+.tweet_card:active {
+  transform: scale(1.05);
 }
 
 #inner p {
@@ -230,6 +244,17 @@ body {
   margin: 20px 0;
   border-style: solid;
   opacity: 0.1;
+}
+.event_card a {
+  text-decoration: none;
+  color: #245380;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.event_card a:hover,
+.event_card a:focus,
+.event_card a:active {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */

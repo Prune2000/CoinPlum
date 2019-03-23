@@ -1,0 +1,49 @@
+/* Large screens */
+@media only screen and (min-width: 1600px) {
+
+}
+
+/* Small tablets to big tablets */
+@media only screen and (max-width: 1023px) {
+
+}
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+
+    /* ----------------------------------------------- */
+    /* HEADER */
+    /* ----------------------------------------------- */
+    .container__header {
+
+    
+        h1 {
+            font-size: 200%;
+        }
+    
+        .main__form-input {
+            
+    
+            p {
+                
+            }
+        }
+    }
+
+
+    /* ----------------------------------------------- */
+    /* INFO */
+    /* ----------------------------------------------- */
+    .container__info-fullInfo {
+        padding: 0 10px;
+
+        h1 {
+            font-size: 150%;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+
+}

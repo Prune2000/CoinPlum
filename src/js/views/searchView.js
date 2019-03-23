@@ -31,7 +31,7 @@ export const renderTitles = () => {
 
 const renderTweet = tweet => {
     const markup = `
-        <div class="tweet_card">
+        <a href="${tweet.status_link}" target="_blank"><div class="tweet_card">
                 <img src="${tweet.user_image_link}" alt="${tweet.user_name}" class="profile-thumbnail">
             <div class="profile-name">
                 <h4>@${tweet.user_name}</h4>
@@ -49,7 +49,7 @@ const renderTweet = tweet => {
                 <strong>${tweet.like_count}</strong> Likes
                 </div>
             </div>
-        </div>
+        </div></a>
     `;
     elements.twitterSection.insertAdjacentHTML('beforeend', markup);
 };
@@ -62,7 +62,7 @@ const renderEvent = event => {
             </div>
             <div id="inner_event">
                 <p>${event.description}</p>
-                <a href="${event.link}"><p>Link to the event information</p></a>
+                <a href="${event.link}" target="_blank"><p>Link to the event information</p></a>
                 <span class="date">${event.date}</span>
             </div>
         </div>

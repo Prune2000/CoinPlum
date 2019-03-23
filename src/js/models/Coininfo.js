@@ -12,13 +12,13 @@ export default class Coininfo {
             this.resultInfo = coinInfo.data;
 
             // control the number of words in the description
-            let arrayOfWords = this.resultInfo.description.split(' ');
+            /*let arrayOfWords = this.resultInfo.description.split(' ');
             
             if (arrayOfWords.length >= 40) {
                 let limitedArray = arrayOfWords.slice(0, 40);
                 let limitedDescription = limitedArray.join(' ');
                 this.resultInfo.description = (limitedDescription + '...');
-            }
+            }*/
             
             
 

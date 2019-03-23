@@ -1,0 +1,25 @@
+/* Large screens */
+/* Small tablets to big tablets */
+/* Phones */
+@media only screen and (max-width: 768px) {
+  /* ----------------------------------------------- */
+  /* HEADER */
+  /* ----------------------------------------------- */
+  .container__header h1 {
+    font-size: 200%;
+  }
+  /* ----------------------------------------------- */
+  /* INFO */
+  /* ----------------------------------------------- */
+  .container__info-fullInfo {
+    padding: 0 10px;
+  }
+  .container__info-fullInfo h1 {
+    font-size: 150%;
+  }
+  .container__info-fullInfo p {
+    margin-bottom: 50px;
+  }
+}
+
+/*# sourceMappingURL=queries.css.map */
